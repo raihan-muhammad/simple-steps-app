@@ -59,7 +59,8 @@ body {
   border-radius: 100px;
   font-size: 14px;
   font-weight: bold;
-
+  background-color: #7950f2;
+  color: #fff;
   display: flex;
   align-items: center;
   gap: 10px;
