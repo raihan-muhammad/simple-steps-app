@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 const messages = [
   "Learn React ⚛️",
   "Apply for jobs 💼",
@@ -29,8 +30,12 @@ export default function App() {
         Step {step}: {messages[step - 1]}
       </p>
       <div className="buttons">
-        <button onClick={handlePrevious}>Previous</button>
-        <button onClick={handleNext}>Next</button>
+        <Button onClick={handlePrevious}>
+          <span>👈</span> Previous
+        </Button>
+        <Button onClick={handleNext}>
+          Next <span>👉</span>
+        </Button>
       </div>
     </div>
   );
